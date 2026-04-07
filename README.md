@@ -1,4 +1,5 @@
-# AINavigatorHQ
+# AINavigator HQ
+
 Public Repo for AINavigator work. Blogs go here: https://ainavigatorhq.substack.com/ 
 
 About The AI Navigator HQ
