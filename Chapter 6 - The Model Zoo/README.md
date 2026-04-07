@@ -1,0 +1,1 @@
+Substack Link: https://ainavigatorhq.substack.com/p/the-ai-navigator-week-6-the-model 
