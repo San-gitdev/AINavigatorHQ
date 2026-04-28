@@ -1,2 +1,6 @@
 pydantic
 loguru
+langgraph
+deepeval
+requests
+python-dotenv
