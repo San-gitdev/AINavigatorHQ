@@ -8,6 +8,28 @@ from rich.table import Table
 from langgraph.graph import StateGraph, END
 from Scrubber import SovereignScrubber
 
+
+"""
+ENTERPRISE ADOPTION: CHAPTER 7 DUAL-LOCK GATEWAY
+------------------------------------------------
+1. ARCHITECTURE: This circuit decouples 'Safety' from 'Generation.' By running 
+   the Sovereign Scrubber locally, we maintain a Zero-Trust posture with 
+   Third-Party Model Providers.
+
+2. STEERING VS. AUDITING: We prioritize 'Steering' (Gate 2) for real-time 
+   enforcement to minimize latency. The 'Audit Gate' is designed for 
+   sampling—using more powerful LLMs to perform async quality checks and 
+   build a robust observability dataset.
+
+3. SCALABILITY: Orchestration via LangGraph allows for 'Worker' nodes to be 
+   swapped or upgraded without breaking the safety wrapper. This provides 
+   long-term resilience against model deprecation.
+
+4. OBSERVABILITY ROI: The outcome of the Audit Gate should be piped to 
+   monitoring tools (Grafana/Datadog) to calculate 'Logic Drift' over time, 
+   transforming AI performance from a 'vibe' into a metric.
+"""
+
 # 1. LAB SETUP
 load_dotenv()
 scrubber = SovereignScrubber()
