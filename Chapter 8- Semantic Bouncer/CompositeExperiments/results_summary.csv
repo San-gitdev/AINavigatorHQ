@@ -1,0 +1,6 @@
+Setup,Accuracy,Precision,Recall,F1,FalseNegatives,FalsePositives,AvgLatencyMs,P95LatencyMs
+Local Ollama (llama3.2:1b),0.4167,0.0000,0.0000,0.0000,35,0,377.7,345.0
+Groq + Rule-Based Keywords,0.7833,0.9583,0.6571,0.7797,12,1,0.0,0.1
+Groq + Presidio + Keywords,0.6333,0.9333,0.4000,0.5600,21,1,21.4,63.5
+Groq + Embeddings,0.8667,0.8649,0.9143,0.8889,3,5,24.4,37.9
+Groq + Enterprise Pipeline,0.7500,0.8125,0.7429,0.7761,9,6,109.5,95.4

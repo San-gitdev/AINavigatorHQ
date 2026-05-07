@@ -1,0 +1,59 @@
+{
+    "policy_name": "Navigator Lab Security Policy v1.0",
+    "_comment": "Edit this file to customise security rules without changing any code.",
+
+    "keyword_rules": [
+        "project icarus",
+        "icarus",
+        "layoff",
+        "layoffs",
+        "redundanc",
+        "reorg",
+        "restructur",
+        "headcount reduction",
+        "reduction in force",
+        "rif"
+    ],
+
+    "pattern_rules": [
+        "\\bP-ICR-\\d+\\b",
+        "\\bHC-RED-\\d{4}\\b"
+    ],
+
+    "semantic_topics": [
+        "Project Icarus launch plans and timeline",
+        "Icarus project status and deliverables",
+        "the mythological figure who flew too close to the sun",
+        "a secret initiative codenamed after a Greek myth",
+        "confidential product launch under a codename",
+        "employee layoffs and redundancies announcement",
+        "headcount reduction and workforce restructuring",
+        "letting employees go and downsizing the company",
+        "people being made redundant or losing their jobs",
+        "organisational restructuring and cost cutting",
+        "reduction in force and severance packages"
+    ],
+
+    "semantic_threshold": 0.4,
+
+    "pii_entities": [
+        "EMAIL_ADDRESS",
+        "PHONE_NUMBER",
+        "CREDIT_CARD",
+        "IP_ADDRESS",
+        "PERSON",
+        "LOCATION",
+        "IBAN_CODE",
+        "CRYPTO",
+        "US_SSN",
+        "URL",
+        "NRP"
+    ],
+
+    "_adding_custom_rules": {
+        "keywords": "Add strings to keyword_rules — case-insensitive substring match",
+        "patterns": "Add regex strings to pattern_rules — use double backslashes",
+        "semantic": "Add plain-English topic descriptions to semantic_topics",
+        "threshold": "semantic_threshold: 0.3=loose, 0.4=balanced, 0.6=strict"
+    }
+}

@@ -1,0 +1,11 @@
+Model,ModelID,Cost,Accuracy,Recall,Precision,F1,FalseNegatives,FalsePositives,AvgLatencyMs,Errors
+Local embeddings (MiniLM),local/all-MiniLM-L6-v2,$0.00,0.8667,0.9143,0.8649,0.8889,3,5,14.1,0
+Groq · Llama 3.1 8B,groq/llama-3.1-8b-instant,$0.00,0.4167,0.0000,0.0000,0.0000,35,0,60.8,0
+Groq · Llama 3.3 70B,groq/llama-3.3-70b-versatile,$0.00,0.4167,0.0000,0.0000,0.0000,35,0,54.0,0
+Groq · Llama 3.1 70B,groq/llama-3.1-70b-versatile,$0.00,0.4167,0.0000,0.0000,0.0000,35,0,62.5,0
+Groq · Mixtral 8x7B,groq/mixtral-8x7b-32768,$0.00,0.4167,0.0000,0.0000,0.0000,35,0,52.0,0
+Groq · Gemma 2 9B,groq/gemma2-9b-it,$0.00,0.4167,0.0000,0.0000,0.0000,35,0,54.2,0
+OR · Mistral Small 24B,openrouter/mistralai/mistral-small-3.1-24b-instruct,~$0.10/1M,0.9667,0.9429,1.0000,0.9706,2,0,429.6,0
+OR · Gemini 2.0 Flash,openrouter/google/gemini-2.0-flash-001,~$0.10/1M,0.9500,0.9143,1.0000,0.9552,3,0,611.1,0
+OR · Claude Haiku,openrouter/anthropic/claude-haiku-4-5,~$0.80/1M,0.9000,0.8286,1.0000,0.9062,6,0,1231.9,0
+OR · Llama 3.3 70B,openrouter/meta-llama/llama-3.3-70b-instruct,~$0.20/1M,0.9500,0.9429,0.9706,0.9565,2,1,530.0,0
