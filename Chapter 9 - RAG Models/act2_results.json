@@ -1,0 +1,83 @@
+[
+  {
+    "question_id": "Q1",
+    "question": "What exact percentage did the Bank of England forecast for UK GDP growth in 2025 in the February 2025 Monetary Policy Report?",
+    "retrieved_chunks": [
+      {
+        "text": "Bank of England Page 33\nChart 2.2: Global GDP growth is expected to slow slightly in the first half of 2025\nFour-quarter UK-weighted world GDP growth with contributions by region (a)\nSources: LSEG Workspace and Bank calculations.\n(a) See footnote (c) of Table 1.D for definition. Figures for 2024 Q4 to 2025 Q2 are Bank staff projections. These projections\ndo not include the Advance Estimate of US GDP in 2024 Q4 or the preliminary flash estimate of euro-area GDP for the same\nquarter, as the data w",
+        "page_num": 34,
+        "distance": 0.6376
+      },
+      {
+        "text": "Bank of England Page 96\nAnnex: Other forecasters\u2019 expectations\nThis annex reports the results of the Bank\u2019s most recent survey of external forecasters.\nResponses were submitted in the two weeks to 26 January and are summarised in Chart A.\nThese are compared with the MPC\u2019s projections, which are conditioned on a range of\nassumptions (Section 1.1) that may differ from those made by external forecasters.\nOn average, external forecasters expected GDP to rise by 1.5% over the four quarters to\n2026 Q1",
+        "page_num": 97,
+        "distance": 0.6382
+      },
+      {
+        "text": "Bank of England Page 32\n(a) The lighter diamonds show Bank staff\u2019s projections at the time of the November Report. The darker diamonds show Bank\nstaff\u2019s current projections. Projections for GDP growth and the unemployment rate are quarterly and show 2024 Q4 and 2025\nQ1 (November projections show 2024 Q3 to 2025 Q1). Projections for CPI inflation are monthly and show January to June\n2025 (November projections show October 2024 to March 2025). The GDP growth and unemployment rate projections for\n2",
+        "page_num": 33,
+        "distance": 0.672
+      },
+      {
+        "text": "Bank of England Page 17\nPrivate sector regular AWE growth is expected to fall from 3\u00be% at the end of this year to just\nunder 3% in the medium term, similar to the November Report from the middle of 2026\nonwards (Table 1.D). Private sector unit wage cost growth is also projected to fall from 3\u00be%\nat the end of 2025 to 2\u00bc% at the end of 2026 and to 1\u00be% at the end of 2027.\nThere remains considerable uncertainty around the calibration of the Committee\u2019s judgement\non the path of second-round effects i",
+        "page_num": 18,
+        "distance": 0.6929
+      }
+    ],
+    "answer": "Based on the provided context excerpts, I **cannot give you a precise single percentage figure** for UK GDP growth in 2025 as forecast in the February 2025 Monetary Policy Report. The excerpts do not explicitly state that specific figure.\n\nThe closest relevant data point available in the context is from **Page 96**, which notes that:\n\n> \"On average, **external forecasters** expected GDP to rise by **1.5%** over the four quarters to 2026 Q1\"\n\nHowever, this refers to **external forecasters' expectations**, not the MPC's own projection, and covers a different time horizon (four quarters to 2026 Q1, not calendar year 2025).\n\nThe other excerpts reference charts and tables (e.g., Chart 2.2 on **Page 33** and Table 1.D referenced on **Page 17**) that likely contain the specific GDP growth projections, but the actual numerical figures from those tables/charts are **not reproduced in the provided text excerpts**.\n\nTo find the Bank's precise GDP growth forecast for 2025, I would recommend consulting **Table 1.D** or the fan charts in **Section 1** of the full February 2025 Monetary Policy Report directly."
+  },
+  {
+    "question_id": "Q2",
+    "question": "What was the MPC's precise CPI inflation forecast for Q4 2025 published in the February 2025 report?",
+    "retrieved_chunks": [
+      {
+        "text": "in 2026 Q1, the same as\nthe MPC\u2019s projection of 4.5% (middle panel of Chart A). They expected the unemployment\nrate to remain at around 4.5% in 2027 Q1 and 4.4% in 2028 Q1. By comparison, the MPC\u2019s\nprojection increases to 4.8% in 2027 Q1 and 2028 Q1.\nCPI inflation was expected to be 2.5% in 2026 Q1, below the MPC\u2019s projection of 2.9% (right\npanel of Chart A). The average external forecasts for 2027 Q1 and 2028 Q1 were both 2.2%.\nThe MPC\u2019s projections are 2.3% in 2027 Q1 and 1.9% and 2028 Q1.",
+        "page_num": 97,
+        "distance": 0.5279
+      },
+      {
+        "text": "23, to\naround 4%, and progress on disinflation has been continuing since then. This has allowed the\nMPC to reduce gradually the degree of monetary policy restrictiveness.\nCPI inflation was 2.5% in December and also in 2024 Q4, close to expectations at the time of\nthe November Report (Section 2.5). That was higher than in Q3 when inflation was at the\nMPC\u2019s 2% target on average. The increase was primarily due to a smaller drag on annual\ninflation from domestic energy bills. CPI inflation excluding",
+        "page_num": 11,
+        "distance": 0.56
+      },
+      {
+        "text": ", and January 2025 for the DMP Survey.\n\u2026and while it is expected to moderate over 2025, it will remain elevated by historical\nstandards.\nAnnual private sector wage growth in the MPC\u2019s baseline projection is expected to slow to\naround 3\u00be% by the end of 2025, as the easing in the labour market and past falls in inflation\nexpectations feed through to lower wage growth (Chart 2.22). That is \u00bd of a percentage point\nhigher than the November 2024 Report projection.\nThe higher expected path for pay grow",
+        "page_num": 64,
+        "distance": 0.6287
+      },
+      {
+        "text": ". That progress has\nallowed the MPC to withdraw gradually some degree of policy restraint, while maintaining\nBank Rate in restrictive territory so as to continue to squeeze out persistent inflationary\npressures.\nCPI inflation was 2.5% in 2024 Q4. Domestic inflationary pressures are moderating, but they\nremain somewhat elevated, and some indicators have eased more slowly than expected.\nHigher global energy costs and regulated price changes are expected to push up headline\nCPI inflation to 3.7% in",
+        "page_num": 5,
+        "distance": 0.6297
+      }
+    ],
+    "answer": "Based on the provided context excerpts, I **cannot give a precise Q4 2025 CPI inflation forecast** from the February 2025 report. The context does not contain that specific figure.\n\nWhat the context does provide regarding CPI inflation projections includes:\n\n- **2024 Q4 actual**: 2.5% (Pages 5 and 11)\n- A mention that headline CPI inflation is expected to rise to **3.7%** at some point (Page 5), though the specific quarter for this peak is not fully stated in the excerpt provided\n- **2026 Q1**: MPC projection of **2.9%** (Page 97)\n- **2027 Q1**: MPC projection of **2.3%** (Page 97)\n- **2028 Q1**: MPC projection of **1.9%** (Page 97)\n\nTo find the precise Q4 2025 forecast, you would need to consult additional sections of the February 2025 Monetary Policy Report not included in these excerpts (likely the detailed forecast tables or Chart 2 projections)."
+  },
+  {
+    "question_id": "Q3",
+    "question": "Which specific external risk factor did the Bank of England's February 2025 report identify as the primary threat to the UK economic outlook?",
+    "retrieved_chunks": [
+      {
+        "text": "which can introduce volatility and potentially non-response\nbias (Box D of the May 2024 Report).\n2.1: Global economy and financial markets\nGlobal GDP growth is expected to slow slightly into 2025. Elevated trade policy\nuncertainty could depress growth further and there are downside risks from\nincreases in tariffs.\nUK-weighted world GDP is projected to have grown by 0.5% in 2024 Q4, the same rate as in\n2024 Q3. Global growth is expected to slow slightly in the first half of 2025 (Chart 2.2), par",
+        "page_num": 33,
+        "distance": 0.7835
+      },
+      {
+        "text": "Bank of England Page 5\nIn addition to the risks around inflation persistence, there are also uncertainties around the\ntrajectories of both demand and supply in the economy that could have implications for\nmonetary policy. Should there be greater or longer-lasting weakness in demand relative to\nsupply, this could push down on inflationary pressures, warranting a less restrictive path of\nBank Rate. If there were to be more constrained supply relative to demand, this could sustain\ndomestic price an",
+        "page_num": 6,
+        "distance": 0.7868
+      },
+      {
+        "text": "pressures from the measures announced in Autumn Budget 2024, and from\ngeopolitical tensions and trade policy uncertainty. These developments had generated\nadditional uncertainties around the economic outlook.\nThe Committee continued to monitor closely the risks of inflation persistence and\nwould assess the extent to which the evolving evidence is consistent with more\nconstrained supply, which could sustain inflationary pressures, or with weaker demand,\nwhich could lead to the emergence of spare",
+        "page_num": 29,
+        "distance": 0.8045
+      },
+      {
+        "text": "Bank of England Page 25\nTable 1: Potential drivers of a change in R* since 2018\nPotential driver Likely directional impact on R*\nDemographic trends\nGlobal trade fragmentation\nHigher risk\nGlobal financial fragmentation\nExpansionary global fiscal policy\nArtificial intelligence (AI)\nClimate change\nDemographic trends, global trade fragmentation and higher risk weigh on R*.\nThe increasing average age of the global population has weighed significantly on R*\nover recent decades (Carvalho et al (2016) a",
+        "page_num": 26,
+        "distance": 0.8051
+      }
+    ],
+    "answer": "Based on the provided context excerpts, the Bank of England's February 2025 Monetary Policy Report identified **trade policy uncertainty** as a primary external risk factor threatening the UK economic outlook.\n\nSpecifically, on **Page 33**, the report states:\n\n> *\"Elevated trade policy uncertainty could depress growth further and there are downside risks from increases in tariffs.\"*\n\nThis is corroborated on **Page 29**, which references:\n\n> *\"geopolitical tensions and trade policy uncertainty. These developments had generated additional uncertainties around the economic outlook.\"*\n\nThese two factors \u2014 **trade policy uncertainty and geopolitical tensions** \u2014 are consistently highlighted as key external risks, with trade policy uncertainty and the prospect of **tariff increases** being the most explicitly flagged threat to growth in the global and UK economic context."
+  }
+]

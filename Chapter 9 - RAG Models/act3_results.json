@@ -1,0 +1,16 @@
+[
+  {
+    "test": "stale",
+    "stale_retrieved": false,
+    "answer": "Based on the provided context excerpts, the Bank of England's forecast does not specifically state a CPI inflation figure for the **end of 2025** (i.e., Q4 2025). The context only references a peak forecast of **3.7% in 2025 Q3** (the third quarter of 2025), which is described as the projected high point before presumably declining.\n\nSpecifically, from **Page 30**:\n> *\"Headline CPI inflation is projected to pick up further this year, reaching 3.7% in 2025 Q3.\"*\n\nThis is corroborated on **Page 10**:\n> *\"...to 3.7% in 2025 Q3. But the MPC judges that this pickup in headline inflation will not lead to additional second-round effects on underlying domestic inflationary pressures in the forecast.\"*\n\nThe available excerpts **do not contain a specific end-of-2025 (Q4 2025) inflation forecast**. To answer that question precisely, additional sections of the Monetary Policy Report would need to be consulted."
+  },
+  {
+    "test": "bad_chunk",
+    "answer": "Based on the context excerpts provided, I **cannot give you a precise table of exact GDP growth projection values** for 2025 and 2026. The excerpts do not include a full projections table with specific numerical figures for those years.\n\nWhat the context **does** tell us (with page citations):\n\n- **Page 48**: GDP growth is projected at **0.1% in 2025 Q1**, which is **0.3 percentage points weaker** than expected at the time of the November Report.\n- **Page 14**: Four-quarter GDP growth is projected to **pick up from the middle of 2025**, reaching **over 1\u00bd% by the end of the forecast period**. It also notes that \"GDP growth in 2025 is much weaker than in the November Report, reflecting recent data developments,\" but that quarterly growth rates beyond the start of 2025 are similar to November projections.\n\nThe context does **not** reproduce the full GDP projections table (such as Table 1.A or equivalent) that would contain the precise annual or quarterly figures for 2025 and 2026. To obtain those exact values, you would need to refer directly to the full February 2025 Monetary Policy Report, specifically the summary tables section."
+  },
+  {
+    "test": "missing_source",
+    "admitted_ignorance": true,
+    "answer": "Based on the context excerpts provided, **there is no information regarding cryptocurrency regulation or digital asset risk exposure for UK financial institutions**.\n\nThe available excerpts cover topics such as:\n- The MPC's December 2024 vote on Bank Rate (Page 29)\n- CPI inflation figures (Page 29)\n- Business investment intentions and the impact of the Budget (Page 91)\n\nI cannot fabricate or infer any recommendations on cryptocurrency or digital assets that are not present in the provided context. To find information on this topic, you would need to consult additional sections of the February 2025 Monetary Policy Report that are not included in these excerpts."
+  }
+]
