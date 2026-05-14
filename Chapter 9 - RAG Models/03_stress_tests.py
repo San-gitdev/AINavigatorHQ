@@ -22,14 +22,13 @@ import json
 import argparse
 import chromadb
 from document_registry import select_document, get_document_by_id
-from utils import get_client, call_model, CostTracker, print_model_registry, set_tier, add_tier_argument
+from utils import get_client, call_model, CostTracker, print_model_registry, set_tier, add_tier_argument, _active_registry
 from rag_pipeline import (
     get_embedding_client,
     retrieve_chunks,
     build_rag_prompt,
     RAG_SYSTEM_PROMPT,
-    CHROMA_PATH,
-    EMBED_MODEL
+    CHROMA_PATH
 )
 
 # ── Stress Test 1: Stale Knowledge Base ───────────────────────────────────────
@@ -114,7 +113,7 @@ ENTERPRISE RISK:
 """)
 
     stale_chunk = build_stale_chunk(document)
-    stale_embed = embed_client.embeddings.create(model=EMBED_MODEL, input=[stale_chunk])
+    stale_embed = embed_client.embeddings.create(model=_active_registry["embedding"]["id"], input=[stale_chunk])
 
     collection.add(
         ids        = ["STALE_INJECTED_001"],

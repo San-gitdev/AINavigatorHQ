@@ -52,6 +52,14 @@ MODEL_TIERS = {
             "output_cost": 0.0,
             "purpose":     "Stress tests — free iteration across failure modes",
             "notes":       "Free, good reasoning capabilities"
+        },
+        "embedding": {
+            "name":        "text-embedding-3-small (free tier)",
+            "id":          "openai/text-embedding-3-small",
+            "input_cost":  0.0,
+            "output_cost": 0.0,
+            "purpose":     "Act 2 — chunk and query embedding via OpenRouter",
+            "notes":       "OpenRouter free allowance covers typical lab usage"
         }
     },
 
@@ -80,6 +88,14 @@ MODEL_TIERS = {
             "output_cost": 0.00000125,   # $1.25 / 1M tokens
             "purpose":     "Stress tests — fast iteration",
             "notes":       "Low latency for repeated stress test runs"
+        },
+        "embedding": {
+            "name":        "text-embedding-3-small",
+            "id":          "openai/text-embedding-3-small",
+            "input_cost":  0.00000002,   # $0.02 / 1M tokens
+            "output_cost": 0.0,
+            "purpose":     "Act 2 — chunk and query embedding via OpenRouter",
+            "notes":       "Same model both tiers; Tier B tracks cost, Tier A treats as free"
         }
     }
 

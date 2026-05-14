@@ -1,3 +1,5 @@
 .env
 _pycache__/
 chroma_db/
+.pyc
+.json

@@ -20,7 +20,7 @@ import chromadb
 from openai import OpenAI
 from dotenv import load_dotenv
 from document_registry import select_document, get_document_by_id
-from utils import get_client, call_model, CostTracker, print_model_registry, set_tier, add_tier_argument
+from utils import get_client, call_model, CostTracker, print_model_registry, set_tier, add_tier_argument, _active_registry, get_model_registry
 
 load_dotenv()
 
@@ -30,7 +30,7 @@ CHROMA_PATH   = "./chroma_db"
 CHUNK_SIZE    = 500
 CHUNK_OVERLAP = 100
 TOP_K         = 4
-EMBED_MODEL   = "text-embedding-3-small"
+# Embedding model is read from the active tier registry at runtime — see utils.py
 
 # ── Step 1: PDF Ingestion ──────────────────────────────────────────────────────
 
@@ -121,7 +121,7 @@ def embed_and_store(chunks: list, tracker: CostTracker, collection_name: str) ->
         return chroma_client.get_collection(collection_name)
 
     print(f"Building new collection: '{collection_name}'")
-    print(f"Embedding model: {EMBED_MODEL}")
+    print(f"Embedding model: {_active_registry['embedding']['id']}")
     print(f"Embedding {len(chunks)} chunks...")
 
     embed_client  = get_embedding_client()
@@ -132,7 +132,7 @@ def embed_and_store(chunks: list, tracker: CostTracker, collection_name: str) ->
     for i in range(0, len(chunks), batch_size):
         batch    = chunks[i:i + batch_size]
         texts    = [c["text"] for c in batch]
-        response = embed_client.embeddings.create(model=EMBED_MODEL, input=texts)
+        response = embed_client.embeddings.create(model=_active_registry["embedding"]["id"], input=texts)
         embeddings = [r.embedding for r in response.data]
         total_tokens += response.usage.total_tokens
 
@@ -144,13 +144,13 @@ def embed_and_store(chunks: list, tracker: CostTracker, collection_name: str) ->
         )
         print(f"  Embedded chunks {i+1}–{min(i+batch_size, len(chunks))} of {len(chunks)}")
 
-    embed_cost = total_tokens * 0.00000002
+    embed_cost = total_tokens * _active_registry["embedding"]["input_cost"]
     print(f"\nTotal embedding tokens: {total_tokens:,}")
     print(f"Embedding cost:         ${embed_cost:.6f}")
 
     tracker.sessions.append({
         "label":             "Embedding",
-        "model_name":        EMBED_MODEL,
+        "model_name":        _active_registry["embedding"]["name"],
         "prompt_tokens":     total_tokens,
         "completion_tokens": 0,
         "input_cost":        embed_cost,
@@ -166,7 +166,7 @@ def embed_and_store(chunks: list, tracker: CostTracker, collection_name: str) ->
 
 def retrieve_chunks(query: str, collection: chromadb.Collection,
                     embed_client: OpenAI, top_k: int = TOP_K) -> list:
-    response = embed_client.embeddings.create(model=EMBED_MODEL, input=[query])
+    response = embed_client.embeddings.create(model=_active_registry["embedding"]["id"], input=[query])
     query_embedding = response.data[0].embedding
 
     results = collection.query(
