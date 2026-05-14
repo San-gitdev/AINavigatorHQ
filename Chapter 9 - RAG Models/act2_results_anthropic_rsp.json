@@ -1,0 +1,83 @@
+[
+  {
+    "question_id": "Q1",
+    "question": "What specific AI Safety Levels does Anthropic's Responsible Scaling Policy define, and what capability thresholds trigger each level?",
+    "retrieved_chunks": [
+      {
+        "text": "Anthropic's Responsible Scaling Policy\nVersion 1.0\nEffective September 19, 2023\nAs AI models become more capable, Anthropic believes that they will create major economic and social\nvalue, but will also present increasingly severe risks. With this document we are making a public\ncommitment to a concrete framework for managing these risks\u2014one that will evolve over time, but that\nseeks to establish clear expectations and accountability in its initial form.\nWe focus these commitments specifically on",
+        "page_num": 1,
+        "distance": 0.5192
+      },
+      {
+        "text": "Framework\nCentral to our plan is the concept of AI safety levels (ASL), which are modeled loosely after the US\ngovernment\u2019s biosafety level (BSL) standards for handling of dangerous biological materials. We define\na series of AI capability thresholds that represent increasing potential risks, such that each ASL\nrequires more stringent safety, security, and operational measures than the previous one. Of course,\nhigher ASL models are also likely to be associated with increasingly powerful benefici",
+        "page_num": 2,
+        "distance": 0.6469
+      },
+      {
+        "text": "expect that AI systems would first elevate this risk from use by\n6Thereareaverylimitednumberofusecaseswhere,atASL-2,wewouldconsiderdisablingthistooling.These\nmaybenegotiatedonacasebycasebasisandmustbeconsideredexclusivelyforextremelylowriskusecases\nthatactivelyinvolveAnthropicpersonnel.\nAnthropic'sResponsibleScalingPolicy,Version1.0 6",
+        "page_num": 6,
+        "distance": 0.668
+      },
+      {
+        "text": "rophicrisks.\ntrainingtechniquesandmodel\nhyperparameters.\nASL-4 CapabilitiesandwarningsignevaluationsdefinedbeforetrainingASL-3models\nASL-5+ \u2026\nAbriefvisualizationoftheAISafetyLevelsframework.Allsafetymeasuresarecumulativeabovethepreviouslevel.\nAnthropic'sResponsibleScalingPolicy,Version1.0 4",
+        "page_num": 4,
+        "distance": 0.6766
+      }
+    ],
+    "answer": "## Anthropic's AI Safety Levels (ASL) Framework\n\nBased on the provided context, Anthropic's Responsible Scaling Policy defines the following AI Safety Levels:\n\n**General Framework Concept** (Page 2):\nThe ASL framework is modeled loosely after the **US government's biosafety level (BSL) standards** for handling dangerous biological materials. Each level represents increasing capability thresholds and requires \"more stringent safety, security, and operational measures than the previous one.\"\n\n**Specific Levels Referenced** (Page 4):\n- **ASL-2** \u2014 Referenced in the context of specific tooling restrictions (Page 6)\n- **ASL-3** \u2014 Mentioned as a training milestone, with ASL-4 capabilities and warning sign evaluations to be defined *before* training ASL-3 models\n- **ASL-4** \u2014 Capabilities and warning sign evaluations are defined before ASL-3 model training\n- **ASL-5+** \u2014 Listed but with no further detail provided\n\n### Important Limitation\nThe context excerpts **do not provide the specific capability thresholds** that trigger each individual level. The documents reference that such thresholds exist but do not detail them in the passages provided. A complete answer would require access to additional sections of the policy document.\n\n*(Sources: Pages 2, 4, and 6)*"
+  },
+  {
+    "question_id": "Q2",
+    "question": "According to Anthropic's RSP, what specific evaluation commitments must be met before deploying a model at each safety level?",
+    "retrieved_chunks": [
+      {
+        "text": "ity to allow safe training\nand deployment of those models. To ensure this system is implemented in a transparent and\ntrustworthy manner, we additionally make the following procedural commitments. These commitments\napply at all ASLs but might be modified or strengthened in the future:\nAnthropic'sResponsibleScalingPolicy,Version1.0 9",
+        "page_num": 9,
+        "distance": 0.6971
+      },
+      {
+        "text": "ner's use of Anthropic models to the same or similar safety measures as Anthropic\n(e.g. similar security measures) in order to address catastrophic risks.\n3. Document and test internal safety procedures. This includes pausing training in response to\nevaluation warning signs, restricting internal model access, safety review of new training runs\nand deployments, and responding to vulnerabilities in deployed models (including, for ASL-3+\nmodels, the ability to restrict access in the case of an extr",
+        "page_num": 10,
+        "distance": 0.6978
+      },
+      {
+        "text": "rophicrisks.\ntrainingtechniquesandmodel\nhyperparameters.\nASL-4 CapabilitiesandwarningsignevaluationsdefinedbeforetrainingASL-3models\nASL-5+ \u2026\nAbriefvisualizationoftheAISafetyLevelsframework.Allsafetymeasuresarecumulativeabovethepreviouslevel.\nAnthropic'sResponsibleScalingPolicy,Version1.0 4",
+        "page_num": 4,
+        "distance": 0.7402
+      },
+      {
+        "text": "g signs before models require higher ASL safety\nmeasures. We commit to pause training before a model's capability level outstrips the\nContainment Measures we have implemented.\n5. Procedural commitments: A set of transparency and procedural measures to ensure verifiable\ncompliance with the commitments in the previous bullet points. Notably, we commit to a formal\nprocess for modifying the current safety levels in response to new information, and defining\nfuture levels.\nThe scheme above is designed",
+        "page_num": 4,
+        "distance": 0.7587
+      }
+    ],
+    "answer": "Based on the provided context excerpts, there is **limited specific detail** about the exact evaluation commitments required before deploying a model at each safety level. However, here is what can be gathered:\n\n## What the Context Does Reveal:\n\n**Regarding ASL-4 specifically (Page 4):**\n- \"Capabilities and warning sign evaluations defined before training ASL-3 models\" \u2014 suggesting evaluations must be pre-defined before moving to the next level.\n\n**Regarding general evaluation commitments (Page 4):**\n- Anthropic commits to **\"pause training before a model's capability level outstrips the Containment Measures\"** implemented\n- There is a commitment to identify **\"warning signs before models require higher ASL safety measures\"**\n\n**Regarding procedural commitments across all ASLs (Pages 9-10):**\n- **\"Document and test internal safety procedures\"**, including:\n  - Pausing training in response to **evaluation warning signs**\n  - Safety review of new training runs and deployments\n  - Responding to vulnerabilities in deployed models\n\n## Important Limitation:\nThe provided excerpts **do not contain sufficient detail** to fully answer what *specific* evaluation thresholds or criteria must be met at *each individual* safety level before deployment. A more complete answer would require additional sections of the RSP document not included in these excerpts.\n\n*(Sources: Pages 4, 9, 10)*"
+  },
+  {
+    "question_id": "Q3",
+    "question": "What exact containment and security measures does Anthropic's Responsible Scaling Policy require for models classified at ASL-3?",
+    "retrieved_chunks": [
+      {
+        "text": "ity to allow safe training\nand deployment of those models. To ensure this system is implemented in a transparent and\ntrustworthy manner, we additionally make the following procedural commitments. These commitments\napply at all ASLs but might be modified or strengthened in the future:\nAnthropic'sResponsibleScalingPolicy,Version1.0 9",
+        "page_num": 9,
+        "distance": 0.534
+      },
+      {
+        "text": "on of models could qualify. For this reason, we commit to periodic evaluations\nof our future models for ASL-3 warning signs.\nASL-2 Containment Measures\nWe do not believe that merely possessing today\u2019s models poses significant risk of catastrophe;\nhowever, in keeping with our commitments earlier this year, we will treat AI model weights as core\nintellectual property with regards to cybersecurity and insider threat risks. You can read more about our\nconcrete security commitments in the appendix, w",
+        "page_num": 5,
+        "distance": 0.6309
+      },
+      {
+        "text": "Anthropic's Responsible Scaling Policy\nVersion 1.0\nEffective September 19, 2023\nAs AI models become more capable, Anthropic believes that they will create major economic and social\nvalue, but will also present increasingly severe risks. With this document we are making a public\ncommitment to a concrete framework for managing these risks\u2014one that will evolve over time, but that\nseeks to establish clear expectations and accountability in its initial form.\nWe focus these commitments specifically on",
+        "page_num": 1,
+        "distance": 0.6967
+      },
+      {
+        "text": "As can be seen in the table, our most significant immediate commitments include a high standard of\nsecurity for ASL-3 containment, and a commitment not to deploy ASL-3 models until thorough\nred-teaming finds no risk of catastrophe. We expect these to be difficult, binding constraints that may\nbecome relevant in the next year or two, requiring substantial effort, investment, and planning to meet.\nASL-2 Commitments\nASL-2 Capabilities and Threat Models\nWe define ASL-24 as models that do not yet pos",
+        "page_num": 5,
+        "distance": 0.7027
+      }
+    ],
+    "answer": "Based on the provided context excerpts, I can only offer a **partial answer** \u2014 the documents reference ASL-3 containment and security measures but do not reproduce their full details within the excerpts provided.\n\nHere is what the context **does** confirm:\n\n- **Page 5** states that Anthropic's \"most significant immediate commitments include a **high standard of security for ASL-3 containment**, and a commitment **not to deploy ASL-3 models until thorough red-teaming finds no risk of catastrophe**.\" These are described as \"difficult, binding constraints that may become relevant in the next year or two, requiring substantial effort, investment, and planning to meet.\"\n\n- **Page 5** also notes that more concrete security commitments are detailed in **an appendix** of the document: *\"You can read more about our concrete security commitments in the appendix\"* \u2014 however, that appendix content is **not included** in the provided excerpts.\n\n- **Page 9** references that the system is implemented with procedural commitments applying \"at all ASLs,\" but does not enumerate ASL-3-specific containment measures in the excerpt shown.\n\n**In summary:** The full, exact ASL-3 containment and security measures are located in the appendix of the Responsible Scaling Policy (Version 1.0, effective September 19, 2023), which is **not reproduced in the provided context**. I cannot fabricate those specifics."
+  }
+]
