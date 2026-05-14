@@ -68,8 +68,8 @@ utils.py
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ai-navigator-w9-rag-lab.git
-cd ai-navigator-w9-rag-lab
+git clone https://github.com/San-gitdev/AINavigatorHQ.git
+cd "AINavigatorHQ/Chapter 9 - RAG Models"
 ```
 
 ### 2. Create a virtual environment
